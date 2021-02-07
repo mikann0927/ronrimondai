@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pdf3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/a3"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:text="解答"
+                android:gravity="left"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/q3"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:text="問題"
+                android:gravity="left"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="ca-app-pub-2444364213094953/4588700246">
+        </com.google.android.gms.ads.AdView>
+
+        <com.joanzapata.pdfview.PDFView
+            android:id="@+id/pdfview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
