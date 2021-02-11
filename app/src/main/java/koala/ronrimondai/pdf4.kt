@@ -43,7 +43,7 @@ class pdf4 : AppCompatActivity() {
             q4.setOnClickListener {
 
                 val pdfView = findViewById<PDFView>(R.id.pdfview)
-                pdfView.fromAsset("q1.pdf")
+                pdfView.fromAsset("q4.pdf")
                     .defaultPage(1)
                     .showMinimap(false)
                     .enableSwipe(true)
